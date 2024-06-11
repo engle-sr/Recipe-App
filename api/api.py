@@ -24,5 +24,7 @@ with app.app_context():
   db.create_all()
   db.session.commit()
 
+@app.route('/api/recipes', methods=['GET'])
+
 if __name__ == '__main__':
     app.run(debug=True)
